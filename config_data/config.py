@@ -18,11 +18,6 @@ class settings:
     DB_PASS: str = os.getenv('DB_PASS')
     DB_NAME: str = os.getenv('DB_NAME')
     
-    # @property
-    # def DATABASE_URL_asyncpg(self):
-    #     # postgresql+asyncpg://postgres:postgres@localhost:5432/tg_bot
-    #     return f"postgresql+asyncpg://{self.DB_USER}:{self.DB_PASS}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
-    
     
 def get_db_url():
     return URL.create(
